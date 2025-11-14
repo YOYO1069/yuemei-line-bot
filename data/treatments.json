@@ -1,0 +1,669 @@
+{
+  "categories": [
+    {
+      "id": "hydration",
+      "name": "德瑪莎水光針療程",
+      "description": "水光注射療程，改善肌膚水分與光澤",
+      "treatments": [
+        {
+          "id": "hydration_botox_c_ha",
+          "name": "肉毒+維他命C+傳明酸",
+          "description": "結合肉毒桿菌、維他命C與傳明酸的複合水光注射",
+          "benefits": ["美白", "抗老", "保濕"],
+          "suitable_for": ["暗沉", "細紋", "乾燥肌膚"]
+        },
+        {
+          "id": "hydration_hyaluronic",
+          "name": "膚美康玻尿酸",
+          "description": "高濃度玻尿酸水光注射，深層補水",
+          "benefits": ["深層保濕", "彈潤肌膚"],
+          "suitable_for": ["乾燥", "缺水", "細紋"]
+        },
+        {
+          "id": "hydration_prp",
+          "name": "PRP 自體血小板",
+          "description": "利用自體血小板生長因子促進肌膚再生",
+          "benefits": ["肌膚再生", "改善膚質", "抗老"],
+          "suitable_for": ["老化", "疤痕", "暗沉"]
+        },
+        {
+          "id": "hydration_salmon",
+          "name": "水光注射 喬雅登（膠原蛋白增生）",
+          "description": "刺激膠原蛋白增生的水光注射療程",
+          "benefits": ["膠原增生", "緊緻", "彈性"],
+          "suitable_for": ["鬆弛", "細紋", "老化"]
+        },
+        {
+          "id": "hydration_sculptra",
+          "name": "水光注射 喬雅登",
+          "description": "長效型水光注射，持續改善膚質",
+          "benefits": ["長效保濕", "膚質改善"],
+          "suitable_for": ["乾燥", "粗糙", "暗沉"]
+        }
+      ]
+    },
+    {
+      "id": "dermapen",
+      "name": "德美微針筆 DERMAPEN 4",
+      "description": "第四代醫療級微針，改善痘疤、毛孔粗大、細紋與膚質不均",
+      "treatments": [
+        {
+          "id": "dermapen_essence",
+          "name": "微針筆+原廠精華",
+          "description": "基礎微針療程搭配原廠精華液",
+          "benefits": ["改善膚質", "縮小毛孔", "淡化細紋"],
+          "suitable_for": ["毛孔粗大", "細紋", "膚質不均"]
+        },
+        {
+          "id": "dermapen_exosome",
+          "name": "微針筆+訊聯外泌體",
+          "description": "微針搭配訊聯外泌體，加速修復",
+          "benefits": ["快速修復", "深層改善", "抗老"],
+          "suitable_for": ["痘疤", "老化", "修復需求"]
+        },
+        {
+          "id": "dermapen_magic_exosome",
+          "name": "微針筆+魔泌外泌體",
+          "description": "微針搭配高濃度魔泌外泌體",
+          "benefits": ["強效修復", "膚質重建", "抗老"],
+          "suitable_for": ["嚴重痘疤", "深層細紋", "老化肌膚"]
+        }
+      ],
+      "add_ons": [
+        {
+          "id": "red_light",
+          "name": "紅光修復",
+          "description": "術後舒緩與修復"
+        },
+        {
+          "id": "pearl_mask",
+          "name": "外敷麗珠蘭 / 外泌體修復",
+          "description": "加強術後保濕與修復"
+        }
+      ]
+    },
+    {
+      "id": "hair_removal",
+      "name": "曜光 ✦ 除毛課程",
+      "description": "專業雷射除毛，安全有效",
+      "treatments": [
+        {
+          "id": "hair_removal_face",
+          "name": "臉部除毛（全臉）",
+          "description": "全臉雷射除毛",
+          "benefits": ["永久除毛", "細緻肌膚"],
+          "suitable_for": ["臉部毛髮困擾"]
+        },
+        {
+          "id": "hair_removal_sideburn",
+          "name": "鬢角・脖子・髮際線",
+          "description": "局部除毛療程",
+          "benefits": ["精準除毛", "輪廓清晰"],
+          "suitable_for": ["局部毛髮"]
+        },
+        {
+          "id": "hair_removal_underarm",
+          "name": "腋下",
+          "description": "腋下除毛",
+          "benefits": ["清爽", "無異味"],
+          "suitable_for": ["腋下毛髮"]
+        },
+        {
+          "id": "hair_removal_arms",
+          "name": "手臂（兩雙手至手肘）",
+          "description": "手臂除毛",
+          "benefits": ["光滑肌膚"],
+          "suitable_for": ["手臂毛髮"]
+        },
+        {
+          "id": "hair_removal_back",
+          "name": "上背・下背（單一部位）",
+          "description": "背部除毛",
+          "benefits": ["清爽背部"],
+          "suitable_for": ["背部毛髮"]
+        },
+        {
+          "id": "hair_removal_chest",
+          "name": "胸・腹（單一部位）",
+          "description": "胸腹除毛",
+          "benefits": ["清爽體態"],
+          "suitable_for": ["胸腹毛髮"]
+        },
+        {
+          "id": "hair_removal_legs",
+          "name": "大腿・小腿（單一部位）",
+          "description": "腿部除毛",
+          "benefits": ["光滑美腿"],
+          "suitable_for": ["腿部毛髮"]
+        },
+        {
+          "id": "hair_removal_private",
+          "name": "私密處除毛（VIO/VBO）",
+          "description": "私密處專業除毛",
+          "benefits": ["清爽舒適"],
+          "suitable_for": ["私密處毛髮"]
+        }
+      ],
+      "packages": [
+        {
+          "id": "package_sideburn_face",
+          "name": "鬢子・臉部除毛 6 堂",
+          "description": "臉部除毛套組"
+        },
+        {
+          "id": "package_underarm_vio",
+          "name": "腋下除毛 6 堂+VBO/VIO（贈 PICO 美白）",
+          "description": "腋下+私密處除毛套組"
+        },
+        {
+          "id": "package_underarm",
+          "name": "腋下除毛 6 堂（贈 PICO 美白）",
+          "description": "腋下除毛套組"
+        },
+        {
+          "id": "package_legs_arms",
+          "name": "小腿或手臂除毛 6 堂",
+          "description": "四肢除毛套組"
+        }
+      ]
+    },
+    {
+      "id": "botox",
+      "name": "曜光 ✦ 肉毒注射",
+      "description": "專業肉毒桿菌注射，改善動態紋與臉部輪廓",
+      "treatments": [
+        {
+          "id": "botox_neuronox",
+          "name": "韓國奇肌肉毒 NEURONOX®",
+          "description": "韓國原廠肉毒",
+          "benefits": ["除皺", "瘦臉"],
+          "suitable_for": ["動態紋", "咀嚼肌肥大"]
+        },
+        {
+          "id": "botox_xeomin",
+          "name": "德國肉毒 XEOMIN®",
+          "description": "德國原廠純淨肉毒",
+          "benefits": ["自然除皺", "持久效果"],
+          "suitable_for": ["表情紋", "抬頭紋"]
+        },
+        {
+          "id": "botox_botox",
+          "name": "美國 BOTOX®",
+          "description": "美國原廠肉毒，全球最知名品牌",
+          "benefits": ["精準除皺", "安全可靠"],
+          "suitable_for": ["各種動態紋"]
+        }
+      ]
+    },
+    {
+      "id": "hair_care",
+      "name": "曜萌 ✦ 育髮",
+      "description": "專業頭皮養護與育髮療程",
+      "treatments": [
+        {
+          "id": "hair_care_laser",
+          "name": "纖髮動力光",
+          "description": "低能量雷射刺激毛囊",
+          "benefits": ["促進生長", "強健髮根"],
+          "suitable_for": ["落髮", "稀疏"]
+        },
+        {
+          "id": "hair_care_ultrasound",
+          "name": "育髮英特波 深層循環活化",
+          "description": "超音波深層活化頭皮",
+          "benefits": ["改善循環", "活化毛囊"],
+          "suitable_for": ["頭皮問題", "落髮"]
+        },
+        {
+          "id": "hair_care_seyo",
+          "name": "SEYO 無針水光頭皮保養",
+          "description": "無針水光導入頭皮精華",
+          "benefits": ["深層滋養", "改善頭皮環境"],
+          "suitable_for": ["頭皮乾燥", "敏感"]
+        },
+        {
+          "id": "hair_care_jetpeel",
+          "name": "育髮 JETPEEL 潔比爾 + 頭皮養護導入",
+          "description": "深層清潔與養護",
+          "benefits": ["清潔毛孔", "導入養分"],
+          "suitable_for": ["油性頭皮", "毛孔堵塞"]
+        },
+        {
+          "id": "hair_care_dermapen",
+          "name": "育髮得美筆 DERMAPEN 4 + 訊聯外泌體 / 魔泌外泌體",
+          "description": "微針搭配外泌體育髮",
+          "benefits": ["強效育髮", "毛囊再生"],
+          "suitable_for": ["嚴重落髮", "禿髮"]
+        }
+      ],
+      "recommendations": [
+        "可搭配 PRP 自體血小板或英特波療程",
+        "強化頭皮循環、調理頭皮環境與毛囊修復"
+      ]
+    },
+    {
+      "id": "laser",
+      "name": "曜光 ✦ 雷射課程",
+      "description": "專業雷射美膚療程",
+      "treatments": [
+        {
+          "id": "laser_picosure_face",
+          "name": "藍雷射（臉部）單堂 + SEYO 無針水光",
+          "description": "皮秒雷射臉部療程",
+          "benefits": ["淨白", "除斑", "膚質改善"],
+          "suitable_for": ["斑點", "暗沉", "膚色不均"]
+        },
+        {
+          "id": "laser_picosure_package",
+          "name": "藍雷射（臉部）6 堂 + 兩堂杏仁酸煥膚",
+          "description": "皮秒雷射套組",
+          "benefits": ["深層淨白", "全面改善"],
+          "suitable_for": ["嚴重斑點", "膚質問題"]
+        },
+        {
+          "id": "laser_honeycomb",
+          "name": "蜂巢皮秒 + 麗珠蘭 或 訊聯外泌體",
+          "description": "蜂巢透鏡皮秒雷射",
+          "benefits": ["除疤", "縮毛孔", "緊緻"],
+          "suitable_for": ["痘疤", "毛孔", "細紋"]
+        },
+        {
+          "id": "laser_picosecond_3",
+          "name": "皮秒雷射 3 堂",
+          "description": "皮秒雷射基礎套組",
+          "benefits": ["淨白", "除斑"],
+          "suitable_for": ["斑點", "暗沉"]
+        },
+        {
+          "id": "laser_honeycomb_6",
+          "name": "蜂巢皮秒雷射 6 堂",
+          "description": "蜂巢皮秒完整療程",
+          "benefits": ["全面改善膚質"],
+          "suitable_for": ["多重肌膚問題"]
+        }
+      ],
+      "aftercare": [
+        {
+          "id": "aftercare_pearl",
+          "name": "麗珠蘭",
+          "description": "術後修復保濕"
+        },
+        {
+          "id": "aftercare_exosome",
+          "name": "訊聯外泌體",
+          "description": "加速修復"
+        },
+        {
+          "id": "aftercare_magic_exosome",
+          "name": "魔泌外泌體",
+          "description": "強效修復"
+        }
+      ],
+      "recommendations": [
+        "乾性或敏感肌搭配「麗珠蘭」修復保濕",
+        "油性或痘痘肌搭配「外泌體」舒緩抗炎"
+      ]
+    },
+    {
+      "id": "rf_ultrasound",
+      "name": "曜線輪廓 ✦ 電音波",
+      "description": "非侵入式體雕與緊緻療程",
+      "treatments": [
+        {
+          "id": "rf_ultrasound_300",
+          "name": "無雙電波 300 發 + 海芙音波（媚必提）300 條",
+          "description": "電波+音波複合療程",
+          "benefits": ["緊緻", "拉提", "輪廓"],
+          "suitable_for": ["鬆弛", "下垂", "輪廓不明顯"]
+        },
+        {
+          "id": "rf_ultrasound_hifu_600",
+          "name": "海芙音波（媚必提）600條",
+          "description": "高強度聚焦超音波",
+          "benefits": ["深層拉提", "緊緻"],
+          "suitable_for": ["嚴重鬆弛", "下垂"]
+        },
+        {
+          "id": "rf_ultrasound_combo_300_200",
+          "name": "無雙電波 300 發 + 美國音波二代 200 發 + 海芙音波（媚必提）200 條",
+          "description": "三合一拉提療程",
+          "benefits": ["全方位拉提", "立體輪廓"],
+          "suitable_for": ["全臉鬆弛", "多層次老化"]
+        },
+        {
+          "id": "rf_ultrasound_eye_500",
+          "name": "無雙電波眼探頭 500 發 + 100 發電波",
+          "description": "眼周專用電波",
+          "benefits": ["眼周緊緻", "淡化細紋"],
+          "suitable_for": ["眼周鬆弛", "魚尾紋"]
+        },
+        {
+          "id": "rf_ultrasound_600",
+          "name": "無雙電波 600 發 + 海芙音波（媚必提）300 條 或 ONDA PRO 12 分鐘（不限部位）",
+          "description": "進階電波音波療程",
+          "benefits": ["強效拉提", "體雕"],
+          "suitable_for": ["嚴重鬆弛", "體態雕塑"]
+        },
+        {
+          "id": "rf_ultrasound_us_600",
+          "name": "美國音波二代 600 發 + ONDA PRO 12 分鐘（不限部位）或 海芙音波（媚必提）200 條",
+          "description": "美國音波進階療程",
+          "benefits": ["精準拉提", "輪廓雕塑"],
+          "suitable_for": ["臉部輪廓", "體態"]
+        },
+        {
+          "id": "rf_ultrasound_combo_600_400",
+          "name": "無雙電波 600 發 + 美國音波第二代 400 發",
+          "description": "頂級拉提療程",
+          "benefits": ["極致緊緻", "立體輪廓"],
+          "suitable_for": ["全面抗老", "重度鬆弛"]
+        }
+      ]
+    },
+    {
+      "id": "curejet",
+      "name": "✦ 酷捷 CUREJET ✦",
+      "description": "不需穿刺皮膚，透過衛星磁浮科技將精華液霧化成微米級粒子，以非侵入或微侵入的方式導入肌膚",
+      "treatments": [
+        {
+          "id": "curejet",
+          "name": "CUREJET 酷捷",
+          "description": "無針霧化導入療程",
+          "benefits": ["痘疤改善", "毛孔縮小", "膚質提升"],
+          "suitable_for": ["痘疤", "毛孔粗大", "膚質不均"],
+          "clinical_results": "臨床案例顯示痘疤毛孔膚質改善"
+        }
+      ]
+    },
+    {
+      "id": "facial",
+      "name": "曜光 ✦ 臉部保養",
+      "description": "專業臉部護理療程",
+      "treatments": [
+        {
+          "id": "facial_basic",
+          "name": "手工清粉刺 + 杏仁酸煥膚",
+          "description": "基礎臉部清潔保養",
+          "benefits": ["深層清潔", "去角質", "淨化毛孔"],
+          "suitable_for": ["粉刺", "毛孔堵塞", "暗沉"]
+        },
+        {
+          "id": "facial_jetpeel",
+          "name": "JETPEEL 潔比爾 + SEYO 無針水光",
+          "description": "深層清潔搭配水光保濕",
+          "benefits": ["深層清潔", "保濕", "亮白"],
+          "suitable_for": ["油性肌", "缺水", "暗沉"]
+        },
+        {
+          "id": "facial_hydrafacial",
+          "name": "海菲秀",
+          "description": "水飛梭深層清潔",
+          "benefits": ["深層清潔", "保濕", "亮膚"],
+          "suitable_for": ["粉刺", "毛孔", "暗沉"]
+        },
+        {
+          "id": "facial_hydrafacial_acid",
+          "name": "海菲秀 + 杏仁酸",
+          "description": "清潔搭配酸類煥膚",
+          "benefits": ["深層清潔", "去角質", "淨白"],
+          "suitable_for": ["粉刺", "暗沉", "粗糙"]
+        },
+        {
+          "id": "facial_hydrafacial_package",
+          "name": "海菲秀 5 堂 + 杏仁酸 2 堂",
+          "description": "臉部保養套組",
+          "benefits": ["持續改善膚質"],
+          "suitable_for": ["長期保養需求"]
+        },
+        {
+          "id": "facial_seyo_single",
+          "name": "SEYO 無針水光",
+          "description": "無針水光單次療程",
+          "benefits": ["深層保濕", "亮膚"],
+          "suitable_for": ["乾燥", "暗沉"]
+        },
+        {
+          "id": "facial_seyo_12",
+          "name": "SEYO 基礎配方 12 堂",
+          "description": "SEYO 基礎療程",
+          "benefits": ["長效保濕", "膚質改善"],
+          "suitable_for": ["乾燥肌", "保養需求"]
+        },
+        {
+          "id": "facial_seyo_30",
+          "name": "SEYO 基礎配方 30 堂",
+          "description": "SEYO 完整療程",
+          "benefits": ["全面膚質改善"],
+          "suitable_for": ["長期保養"]
+        },
+        {
+          "id": "facial_seyo_advanced_12",
+          "name": "SEYO 進階配方 12 堂",
+          "description": "SEYO 進階療程",
+          "benefits": ["深層改善", "抗老"],
+          "suitable_for": ["老化", "嚴重膚質問題"]
+        },
+        {
+          "id": "facial_seyo_advanced_24",
+          "name": "SEYO 進階配方 24 堂",
+          "description": "SEYO 完整進階療程",
+          "benefits": ["全面抗老", "膚質重建"],
+          "suitable_for": ["嚴重老化", "全面改善"]
+        }
+      ]
+    },
+    {
+      "id": "iv_drip",
+      "name": "曜活源 ✦ 點滴",
+      "description": "客製化點滴療程，補充營養與促進健康",
+      "treatments": [
+        {
+          "id": "iv_fat_burning",
+          "name": "消脂特調",
+          "description": "葡萄糖液、肝得健、卡尼丁",
+          "benefits": ["促進代謝", "消脂"],
+          "suitable_for": ["體重管理", "代謝不佳"]
+        },
+        {
+          "id": "iv_whitening",
+          "name": "美白特調",
+          "description": "胺命活源、治敏健、諾貝爾、止血明、循必利、舒得清、穀胱甘肽",
+          "benefits": ["美白", "抗氧化"],
+          "suitable_for": ["暗沉", "色素沉澱"]
+        },
+        {
+          "id": "iv_beauty",
+          "name": "美夢特調",
+          "description": "胺命活源、諾貝爾*2、保肝、B12、循必利、舒得清、穀胱甘肽、硫酸鋅*2",
+          "benefits": ["美容", "抗老", "保肝"],
+          "suitable_for": ["美容保養", "抗老需求"]
+        },
+        {
+          "id": "iv_detox",
+          "name": "應酬排毒特調",
+          "description": "胺命活源、保肝*3、治敏健、舒得清、穀胱甘肽、美久奧林",
+          "benefits": ["解毒", "保肝", "舒緩"],
+          "suitable_for": ["應酬", "肝臟負擔"]
+        },
+        {
+          "id": "iv_immunity",
+          "name": "感冒特調",
+          "description": "AMINO-S（胺美樂-S）、諾貝爾*2、治敏健*2、硫酸鋅*2、美久奧林、舒得清",
+          "benefits": ["增強免疫", "舒緩感冒"],
+          "suitable_for": ["感冒", "免疫力低下"]
+        },
+        {
+          "id": "iv_immunity_plus",
+          "name": "重感冒特調",
+          "description": "AMINO-S（胺美樂-S）、諾貝爾*2、治敏健*2、硫酸鋅*2、美久奧林、舒得清、貝力多",
+          "benefits": ["強效免疫", "快速恢復"],
+          "suitable_for": ["嚴重感冒", "體力不支"]
+        },
+        {
+          "id": "iv_energy",
+          "name": "重充電特調",
+          "description": "胺命活源、治敏健、諾貝爾、止血明、美久奧林、保肝、B12、循必利、舒得清、腦寶、貝力多",
+          "benefits": ["補充能量", "恢復體力"],
+          "suitable_for": ["疲勞", "體力不足"]
+        },
+        {
+          "id": "iv_fat_burning_plus",
+          "name": "重消脂特調",
+          "description": "葡萄糖液、肝得健*2、卡尼丁*2",
+          "benefits": ["強效消脂", "代謝促進"],
+          "suitable_for": ["減重", "代謝症候群"]
+        }
+      ],
+      "hot_packages": [
+        {
+          "id": "package_male_vitality",
+          "name": "男性雄壯特調（體外震波 加購價 $999）",
+          "description": "男性專屬活力點滴"
+        },
+        {
+          "id": "package_whitening_combo",
+          "name": "美白+美夢+應酬 特調 3 堂（任選）",
+          "description": "美容保養套組"
+        },
+        {
+          "id": "package_male_vitality_3",
+          "name": "男性雄壯特調點滴 3 堂",
+          "description": "男性活力完整療程"
+        }
+      ]
+    },
+    {
+      "id": "body_sculpting",
+      "name": "✦ 曜體態 ✦",
+      "description": "身體雕塑與緊緻療程",
+      "treatments": [
+        {
+          "id": "body_onda_pro_face",
+          "name": "ONDA PRO 超微波 - 臉部 12 分鐘",
+          "description": "臉部超微波緊緻",
+          "benefits": ["臉部緊緻", "輪廓雕塑"],
+          "suitable_for": ["雙下巴", "嘴邊肉", "蝴蝶袖", "肚子", "大腿"],
+          "first_time": true
+        },
+        {
+          "id": "body_onda_pro_body",
+          "name": "ONDA PRO 超微波 - 身體 15 分鐘",
+          "description": "身體超微波雕塑",
+          "benefits": ["體態雕塑", "緊緻"],
+          "suitable_for": ["局部肥胖", "鬆弛"],
+          "first_time": true
+        },
+        {
+          "id": "body_onda_pro_package",
+          "name": "ONDA PRO 超微波 - 買三堂贈一堂",
+          "description": "超微波套組優惠",
+          "benefits": ["持續改善體態"],
+          "suitable_for": ["長期體雕需求"]
+        },
+        {
+          "id": "body_ultrasound_fat",
+          "name": "英特波 + 消脂點滴",
+          "description": "超音波搭配點滴",
+          "benefits": ["體雕", "代謝"],
+          "suitable_for": ["局部肥胖"]
+        },
+        {
+          "id": "body_embody_drip",
+          "name": "三堂 EMBODY + 消脂點滴 1 堂",
+          "description": "體雕搭配點滴套組",
+          "benefits": ["雕塑", "代謝"],
+          "suitable_for": ["體態管理"]
+        },
+        {
+          "id": "body_embody_12",
+          "name": "EMBODY 12 堂",
+          "description": "完整體雕療程",
+          "benefits": ["全面體態改善"],
+          "suitable_for": ["體態雕塑"]
+        },
+        {
+          "id": "body_ultrasound_drip_6_2",
+          "name": "英特波 6 堂 + 消脂點滴 2 堂",
+          "description": "體雕加強套組",
+          "benefits": ["雕塑", "代謝加強"],
+          "suitable_for": ["體重管理"]
+        },
+        {
+          "id": "body_emscuplpt_neo",
+          "name": "EMSCUPLPT NEO 3 堂（任選部位）",
+          "description": "增肌減脂療程",
+          "benefits": ["增肌", "減脂"],
+          "suitable_for": ["體態雕塑", "肌肉訓練"]
+        }
+      ]
+    },
+    {
+      "id": "emsw",
+      "name": "曜超能 ✦ 體外震波",
+      "description": "非侵入式體外震波治療系統，透過聲波能量作用於目標組織以促進修復與循環",
+      "applications": [
+        "泌尿科臨床應用",
+        "慢性骨盆疼痛候群（CPPS）",
+        "慢性非細菌性攝護腺炎",
+        "血管性勃起功能障礙（ED）"
+      ],
+      "treatments": [
+        {
+          "id": "emsw_nurse_6",
+          "name": "體外震波 6 堂（護理師）+ 男性特調點滴一堂",
+          "description": "護理師執行療程",
+          "benefits": ["改善循環", "功能提升"],
+          "suitable_for": ["男性功能障礙"]
+        },
+        {
+          "id": "emsw_nurse_7_1",
+          "name": "體外震波 7+1 堂（護理師）",
+          "description": "護理師執行加強療程",
+          "benefits": ["持續改善"],
+          "suitable_for": ["長期治療需求"]
+        },
+        {
+          "id": "emsw_doctor_6",
+          "name": "體外震波6堂（醫師）+ 男性特調點滴一堂",
+          "description": "醫師親自執行",
+          "benefits": ["專業評估", "精準治療"],
+          "suitable_for": ["嚴重功能障礙"]
+        },
+        {
+          "id": "emsw_doctor_7_1",
+          "name": "體外震波 7+1堂（醫師）",
+          "description": "醫師執行完整療程",
+          "benefits": ["全面改善"],
+          "suitable_for": ["完整治療計畫"]
+        }
+      ]
+    }
+  ],
+  "consultation_guidelines": {
+    "price_policy": "依照醫美法規，不直接顯示價格。請引導客戶「來店諮詢」或「預約評估」。",
+    "recommendation_approach": [
+      "了解客戶需求與困擾",
+      "根據膚質、問題、預算推薦適合療程",
+      "說明療程效果與適合對象",
+      "引導預約諮詢或評估",
+      "不主動提及價格，若客戶詢問則建議來店諮詢"
+    ],
+    "keywords_mapping": {
+      "美白": ["hydration", "laser", "iv_drip"],
+      "除斑": ["laser"],
+      "保濕": ["hydration", "facial"],
+      "抗老": ["hydration", "dermapen", "rf_ultrasound"],
+      "除毛": ["hair_removal"],
+      "痘疤": ["dermapen", "laser", "curejet"],
+      "毛孔": ["dermapen", "laser", "facial"],
+      "緊緻": ["rf_ultrasound", "body_sculpting"],
+      "拉提": ["rf_ultrasound"],
+      "瘦臉": ["botox", "rf_ultrasound"],
+      "除皺": ["botox"],
+      "育髮": ["hair_care"],
+      "體雕": ["body_sculpting"],
+      "減重": ["iv_drip", "body_sculpting"],
+      "男性": ["emsw", "iv_drip"]
+    }
+  }
+}

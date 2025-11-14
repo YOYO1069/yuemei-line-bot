@@ -42,7 +42,7 @@ app.post('/webhook', middleware(config.line), async (req, res) => {
     await Promise.all(
       events.map(async (event) => {
         if (event.type === 'message') {
-          const replyMessage = await handleMessage(event);
+          const replyMessage = await handleMessage(event, lineClient);
           if (replyMessage && event.replyToken) {
             await lineClient.replyMessage(event.replyToken, replyMessage);
           }
