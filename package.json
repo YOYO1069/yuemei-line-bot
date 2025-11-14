@@ -1,0 +1,25 @@
+{
+  "name": "yuemei-line-bot",
+  "version": "1.0.0",
+  "description": "約美助理小幫手 - 邊美醬 LINE Bot",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^9.3.0",
+    "@supabase/supabase-js": "^2.45.4",
+    "express": "^4.21.1",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.6",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
