@@ -1,8 +1,9 @@
-import { WebhookEvent, TextMessage } from '@line/bot-sdk';
+import { WebhookEvent, TextMessage, FlexMessage } from '@line/bot-sdk';
 import { getDoctors } from '../db/supabase.js';
 import { getBenmeiReply } from '../utils/benmei.js';
+import { createDoctorListMessage } from '../templates/appointmentFlexMessage.js';
 
-export async function handleMessage(event: WebhookEvent): Promise<TextMessage | null> {
+export async function handleMessage(event: WebhookEvent): Promise<TextMessage | FlexMessage | null> {
   if (event.type !== 'message' || event.message.type !== 'text') {
     return null;
   }
@@ -17,16 +18,18 @@ export async function handleMessage(event: WebhookEvent): Promise<TextMessage | 
     };
   }
   
-  // 醫師查詢
+  // 醫師查詢 - 使用 Flex Message 顯示醫師卡片
   if (/醫師|doctor/i.test(userMessage)) {
     try {
       const doctors = await getDoctors();
-      const doctorNames = doctors.map(d => `${d.name} - ${d.specialty}`);
-      const doctorList = `✨ 我們的醫師陣容 ✨\n\n${doctorNames.map((d, i) => `${i + 1}. ${d}`).join('\n')}\n\n都是超專業的醫師喔💕`;
-      return {
-        type: 'text',
-        text: doctorList,
-      };
+      if (doctors.length === 0) {
+        return {
+          type: 'text',
+          text: '目前沒有醫師資料喔 💕',
+        };
+      }
+      // 返回 Flex Message 醫師卡片
+      return createDoctorListMessage(doctors);
     } catch (error) {
       console.error('Error fetching doctors:', error);
       return {
@@ -44,11 +47,11 @@ export async function handleMessage(event: WebhookEvent): Promise<TextMessage | 
     };
   }
   
-  // 預約
+  // 預約 - 引導使用者開啟 LIFF 預約表單
   if (/預約|booking|約診/i.test(userMessage)) {
     return {
       type: 'text',
-      text: '好的～請告訴邊美醬：\n1️⃣ 您的姓名\n2️⃣ 想看哪位醫師\n3️⃣ 希望的日期和時間\n\n例如：「王小明 陳醫師 明天下午2點」',
+      text: '💖 想要預約嗎？\n\n請點選下方選單的「📅 立即預約」按鈕，\n邊美醬會幫您開啟預約表單喔～\n\n超方便的！✨',
     };
   }
   

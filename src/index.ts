@@ -1,15 +1,29 @@
 import express from 'express';
+import cors from 'cors';
 import { middleware, WebhookEvent, Client } from '@line/bot-sdk';
 import { config, validateConfig } from './config.js';
 import { handleMessage } from './handlers/messageHandler.js';
+import appointmentRoutes from './routes/appointments.js';
 
 validateConfig();
 
 const app = express();
+
+// Enable CORS for LIFF app
+app.use(cors({
+  origin: true,
+  credentials: true,
+}));
+
+// Parse JSON bodies
+app.use(express.json());
 const lineClient = new Client({
   channelAccessToken: config.line.channelAccessToken,
   channelSecret: config.line.channelSecret,
 });
+
+// API routes
+app.use('/api', appointmentRoutes);
 
 // Health check endpoint
 app.get('/', (req, res) => {
