@@ -220,7 +220,7 @@ export function createAppointmentConfirmationMessage(data: AppointmentData): Fle
             action: {
               type: 'uri',
               label: '查看我的預約',
-              uri: `https://liff.line.me/YOUR_LIFF_ID?action=view&id=${id}`,
+              uri: `https://liff.line.me/2008492658-mpyqvyoe?action=view&id=${id}`,
             },
             color: '#9b59b6',
           },
@@ -304,7 +304,7 @@ export function createDoctorListMessage(doctors: any[]): FlexMessage {
           action: {
             type: 'uri' as const,
             label: '立即預約',
-            uri: `https://liff.line.me/YOUR_LIFF_ID?doctor=${doctor.id}`,
+            uri: `https://liff.line.me/2008492658-mpyqvyoe?doctor=${doctor.id}`,
           },
           color: '#9b59b6',
         },
