@@ -2,6 +2,7 @@ import { WebhookEvent, TextMessage, FlexMessage } from '@line/bot-sdk';
 import { getDoctors } from '../db/supabase.js';
 import { getBenmeiReply } from '../utils/benmei.js';
 import { createDoctorListMessage } from '../templates/appointmentFlexMessage.js';
+import { createClinicInfoMessage } from './clinicInfo.js';
 
 export async function handleMessage(event: WebhookEvent): Promise<TextMessage | FlexMessage | null> {
   if (event.type !== 'message' || event.message.type !== 'text') {
@@ -37,6 +38,11 @@ export async function handleMessage(event: WebhookEvent): Promise<TextMessage | 
         text: getBenmeiReply('error'),
       };
     }
+  }
+  
+  // 診所資訊
+  if (/診所資訊|診所|地址|電話|營業時間|clinic info/i.test(userMessage)) {
+    return createClinicInfoMessage();
   }
   
   // 幫助
